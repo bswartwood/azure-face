@@ -41,10 +41,14 @@ def process_images(input_dir, output_dir, endpoint, headers, params):
         response = requests.post(endpoint, params=params, headers=headers, data=picture)
         face_response_json = response.json()
 
-        if not os.path.exists(output_dir):
-            os.makedirs(output_dir)
+        if not os.path.exists('results'):
+            os.makedirs('results')
 
-        result_path = '{}/{}.txt'.format(output_dir, file)
+        target = '{}/{}'.format('results', output_dir)
+        if not os.path.exists(target):
+            os.makedirs(target)
+
+        result_path = '{}/{}.txt'.format(target, file)
         print('Writing results to {}'.format(result_path))
         with open(result_path, 'w') as result_file:
             pprint.pprint(face_response_json, stream=result_file)
@@ -55,9 +59,6 @@ def process_face_images(conf):
     face_key = conf[KEY_1]
     face_headers = {'Ocp-Apim-Subscription-Key': face_key,
                     'Content-Type': 'application/octet-stream'}
-
-    # You can also hit the endpoint via image URL:
-    # data = {'url': IMAGE_URL}
 
     process_images(INPUT_DIR, FACE_OUTPUT_DIR, face_endpoint, face_headers, FACE_PARAMS)
 

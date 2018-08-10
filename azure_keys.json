@@ -1,6 +1,6 @@
 {
   "face": {
-    "endpoint": "https://westcentralus.api.cognitive.microsoft.com/face/v1.0",
+    "endpoint": "https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect",
     "key_1": "2d167a865b8e4e1d959c1388b32609a7",
     "key_2": "66929ef60ed74bd7b5aa4a5cf64e4c44"
   },
