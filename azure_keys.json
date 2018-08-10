@@ -1,12 +1,12 @@
 {
   "face": {
-    "endpoint": "https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect",
-    "key_1": "YOUR_KEY_HERE",
-    "key_2": "YOUR_KEY_HERE"
+    "endpoint": "https://westcentralus.api.cognitive.microsoft.com/face/v1.0",
+    "key_1": "2d167a865b8e4e1d959c1388b32609a7",
+    "key_2": "66929ef60ed74bd7b5aa4a5cf64e4c44"
   },
   "vision": {
-    "endpoint": "https://westcentralus.api.cognitive.microsoft.com/vision/v2.0",
-    "key_1": "YOUR_KEY_HERE",
-    "key_2": "YOUR_KEY_HERE"
+    "endpoint": "https://westcentralus.api.cognitive.microsoft.com/vision/v1.0/analyze",
+    "key_1": "4020cf9711404309b64aaccae355de3c",
+    "key_2": "cbe35a89efa147e581d936be1069b290"
   }
 }
