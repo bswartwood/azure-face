@@ -1,0 +1,12 @@
+{
+  "face": {
+    "endpoint": "https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect",
+    "key_1": "YOUR_KEY_HERE",
+    "key_2": "YOUR_KEY_HERE"
+  },
+  "vision": {
+    "endpoint": "https://westcentralus.api.cognitive.microsoft.com/vision/v2.0",
+    "key_1": "YOUR_KEY_HERE",
+    "key_2": "YOUR_KEY_HERE"
+  }
+}
